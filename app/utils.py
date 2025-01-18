@@ -1,5 +1,5 @@
 from typing import List, Dict, Any
-from models import QueryFilter
+from app.models import QueryFilter
 from langchain_google_genai import GoogleGenerativeAI
 from langchain.prompts import PromptTemplate
 from langchain.schema.runnable import RunnableSequence

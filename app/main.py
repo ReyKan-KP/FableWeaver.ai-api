@@ -16,8 +16,8 @@
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from models import RecommendationRequest, HistoryRecommendationRequest, AnimeRecommendation
-from recommendation import query_based_recommendation, history_based_recommendation
+from app.models import RecommendationRequest, HistoryRecommendationRequest, AnimeRecommendation
+from app.recommendation import query_based_recommendation, history_based_recommendation
 
 app = FastAPI(
     title="Anime Recommendation System API",

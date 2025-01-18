@@ -1,7 +1,7 @@
 from typing import List, Dict, Any
-from models import AnimeRecommendation, AnimeScore, QueryFilter
-from database import get_anime_details, get_user_history, get_anime_feedback, get_anime_normalized_rank, get_anime_image_url, get_total_docs
-from utils import parse_query, filter_metadata, calculate_normalized_evaluation, combine_scores, extract_genres_from_string
+from app.models import AnimeRecommendation, AnimeScore, QueryFilter
+from app.database import get_anime_details, get_user_history, get_anime_feedback, get_anime_normalized_rank, get_anime_image_url, get_total_docs
+from app.utils import parse_query, filter_metadata, calculate_normalized_evaluation, combine_scores, extract_genres_from_string
 from pinecone import Pinecone
 from langchain_huggingface import HuggingFaceEmbeddings
 import os
